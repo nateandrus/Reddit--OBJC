@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		ED9DB05922148AEB00F958D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9DB05822148AEB00F958D2 /* AppDelegate.m */; };
-		ED9DB05C22148AEB00F958D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9DB05B22148AEB00F958D2 /* ViewController.m */; };
 		ED9DB05F22148AEB00F958D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9DB05D22148AEB00F958D2 /* Main.storyboard */; };
 		ED9DB06122148AED00F958D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9DB06022148AED00F958D2 /* Assets.xcassets */; };
 		ED9DB06422148AED00F958D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9DB06222148AED00F958D2 /* LaunchScreen.storyboard */; };
 		ED9DB06722148AED00F958D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9DB06622148AED00F958D2 /* main.m */; };
+		ED9DB07822148C5600F958D2 /* DVMPost.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9DB07722148C5600F958D2 /* DVMPost.m */; };
+		ED9DB07B22148C6600F958D2 /* DVMPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9DB07A22148C6600F958D2 /* DVMPostController.m */; };
+		ED9DB07F2214A1DB00F958D2 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9DB07E2214A1DB00F958D2 /* PostTableViewCell.swift */; };
+		ED9DB0812214A24000F958D2 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9DB0802214A24000F958D2 /* PostListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED9DB05422148AEB00F958D2 /* Reddit_OBJ_GP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit_OBJ_GP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9DB05722148AEB00F958D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED9DB05822148AEB00F958D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ED9DB05A22148AEB00F958D2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ED9DB05B22148AEB00F958D2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ED9DB05E22148AEB00F958D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED9DB06022148AED00F958D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED9DB06322148AED00F958D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED9DB06522148AED00F958D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED9DB06622148AED00F958D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED9DB07622148C5600F958D2 /* DVMPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMPost.h; sourceTree = "<group>"; };
+		ED9DB07722148C5600F958D2 /* DVMPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMPost.m; sourceTree = "<group>"; };
+		ED9DB07922148C6600F958D2 /* DVMPostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMPostController.h; sourceTree = "<group>"; };
+		ED9DB07A22148C6600F958D2 /* DVMPostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMPostController.m; sourceTree = "<group>"; };
+		ED9DB07D2214A1DB00F958D2 /* Reddit_OBJ_GP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reddit_OBJ_GP-Bridging-Header.h"; sourceTree = "<group>"; };
+		ED9DB07E2214A1DB00F958D2 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		ED9DB0802214A24000F958D2 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +66,78 @@
 		ED9DB05622148AEB00F958D2 /* Reddit_OBJ_GP */ = {
 			isa = PBXGroup;
 			children = (
+				ED9DB07D2214A1DB00F958D2 /* Reddit_OBJ_GP-Bridging-Header.h */,
+				ED9DB06E22148B2700F958D2 /* UI */,
+				ED9DB07022148B3B00F958D2 /* Models */,
+				ED9DB07522148C1400F958D2 /* View */,
+				ED9DB06F22148B3600F958D2 /* Controllers */,
+				ED9DB06D22148B1500F958D2 /* Resources */,
+			);
+			path = Reddit_OBJ_GP;
+			sourceTree = "<group>";
+		};
+		ED9DB06D22148B1500F958D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				ED9DB05722148AEB00F958D2 /* AppDelegate.h */,
 				ED9DB05822148AEB00F958D2 /* AppDelegate.m */,
-				ED9DB05A22148AEB00F958D2 /* ViewController.h */,
-				ED9DB05B22148AEB00F958D2 /* ViewController.m */,
-				ED9DB05D22148AEB00F958D2 /* Main.storyboard */,
 				ED9DB06022148AED00F958D2 /* Assets.xcassets */,
-				ED9DB06222148AED00F958D2 /* LaunchScreen.storyboard */,
 				ED9DB06522148AED00F958D2 /* Info.plist */,
 				ED9DB06622148AED00F958D2 /* main.m */,
 			);
-			path = Reddit_OBJ_GP;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED9DB06E22148B2700F958D2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				ED9DB05D22148AEB00F958D2 /* Main.storyboard */,
+				ED9DB06222148AED00F958D2 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		ED9DB06F22148B3600F958D2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED9DB07322148B5D00F958D2 /* ViewControllers */,
+				ED9DB07222148B5200F958D2 /* ModelControllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		ED9DB07022148B3B00F958D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED9DB07622148C5600F958D2 /* DVMPost.h */,
+				ED9DB07722148C5600F958D2 /* DVMPost.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		ED9DB07222148B5200F958D2 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED9DB07922148C6600F958D2 /* DVMPostController.h */,
+				ED9DB07A22148C6600F958D2 /* DVMPostController.m */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		ED9DB07322148B5D00F958D2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED9DB0802214A24000F958D2 /* PostListTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED9DB07522148C1400F958D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED9DB07E2214A1DB00F958D2 /* PostTableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +171,7 @@
 				TargetAttributes = {
 					ED9DB05322148AEB00F958D2 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -141,9 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED9DB05C22148AEB00F958D2 /* ViewController.m in Sources */,
+				ED9DB07822148C5600F958D2 /* DVMPost.m in Sources */,
 				ED9DB06722148AED00F958D2 /* main.m in Sources */,
+				ED9DB07F2214A1DB00F958D2 /* PostTableViewCell.swift in Sources */,
+				ED9DB0812214A24000F958D2 /* PostListTableViewController.swift in Sources */,
 				ED9DB05922148AEB00F958D2 /* AppDelegate.m in Sources */,
+				ED9DB07B22148C6600F958D2 /* DVMPostController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,14 +358,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Reddit_OBJ_GP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Reddit_OBJ_GP/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Andrus.Reddit-OBJ-GP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Reddit_OBJ_GP/Reddit_OBJ_GP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,14 +378,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Reddit_OBJ_GP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Reddit_OBJ_GP/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Andrus.Reddit-OBJ-GP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Reddit_OBJ_GP/Reddit_OBJ_GP-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
